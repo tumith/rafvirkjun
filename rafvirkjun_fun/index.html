@@ -1,37 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-    table, th, td{
-        border: 1px solid black;
-        padding: 5px;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rafvirkjun</title>
+  </head>
+  <style>
+    p {
+      font-size: 20px;
     }
-</style>
-<body>
+    table {
+      margin-bottom: 10px;
+    }
+    li {
+      padding: 10px;
+    }
+    th,
+    td {
+      border: 1px solid black;
+      padding: 5px;
+    }
+  </style>
+  <body>
     <table>
-        <thead>
-            <th>
+      <thead>
+        <th>Töflur</th>
+        <th>Glærur</th>
+      </thead>
+      <tbody>
+        <!-- Töflur -->
+        <th>
+          <table id="table1">
+            <p>Eðlishlutföll</p>
+            <thead>
+              <th>
                 Nafn:
-            </th>
-            <th>
+              </th>
+              <th>
                 Eðlisviðnám:
-            </th>
-            <th>
+              </th>
+              <th>
                 Eðlisleiðni:
-            </th>
-            <th>
+              </th>
+              <th>
                 Hitastuðull:
-            </th>
-        </thead>
-        <tbody>
-                <!-- here goose our data-->
-        </tbody>
+              </th>
+            </thead>
+            <tbody>
+              <!-- here goose our data-->
+            </tbody>
+          </table>
+          <p>Uplísingar (Tákn)</p>
+          <table id="table2">
+            <thead>
+              <th>
+                Nafn:
+              </th>
+              <th>
+                tákn:
+              </th>
+              <th>
+                mælieningar:
+              </th>
+              <th>
+                einingatákn:
+              </th>
+            </thead>
+            <tbody>
+              <!-- here goose our data-->
+            </tbody>
+          </table>
+
+          <p>Formúlur</p>
+          <table id="table3">
+            <thead>
+              <th>
+                Nafn:
+              </th>
+              <th>
+                Formúla:
+              </th>
+            </thead>
+            <tbody>
+              <!-- here goose our data -->
+            </tbody>
+          </table>
+
+          <p>Hitastigsbreytingar</p>
+          <table id="table4">
+            <thead>
+              <th>Nafn</th>
+              <th>Formúla</th>
+            </thead>
+            <tbody>
+              <!-- here goose our data -->
+            </tbody>
+          </table>
+
+          <p></p>
+        </th>
+
+        <!-- Glærur -->
+        <th>
+          <ul>
+            <li>
+              Til þess að flytja rafmagn á milli staða eru notaðar rafleiðslur /
+              rafleiðarar
+            </li>
+
+            <li>
+              Kostur er að leiðarar hafi sem minnst viðnám of því eru þeir úr
+              efnum sem hafa : lágt eðlisviðnám = p og háa eðlisleiðni = G
+            </li>
+
+            <li>
+              Við hönnum raflagna ig rafrása þarf að hafa eftirtalin fjögur
+              atriði til viðmiðunar:
+              <ul>
+                <li>
+                  Viðnámið í leiðurunum = Ri
+                </li>
+                <li>
+                  Heildarviðnám rásarinnar = Rh
+                </li>
+                <li>
+                  Strauminn = I
+                </li>
+                <li>
+                  Spennuföllin = U
+                </li>
+                <ul>
+                  <li>
+                    Stafurinn "I" í Ri merkir viðnámið í leiðaranum og "h" fyir
+                    R merkir heildarviðnám rásarinnar
+                  </li>
+                </ul>
+              </ul>
+            </li>
+
+            <li>
+              Eins og áður hefur komið fram hafa leiðarar alltaf eitthvert
+              viðnám og fer það eftir <i>efni, lengd</i> og
+              <i>gildleika</i> leiðarans
+            </li>
+            <li>
+              Leiðarar sem flytja straum til einhvers ákveðins álags eru a.m.k
+              <i>tveir</i> og eru alltaf <i>jafn sverir</i> og
+              <i>jafn langir</i>
+            </li>
+            <li>
+              Þeir hafa því jafn mikið viðnám
+            </li>
+            <li>
+              Hluti spennunnar fer í það að knýja strauminn gegnum leiðarana
+            </li>
+            <li>
+              Þessi hluti spennunnar er oft nefndur <b>spennufall í leiðurum</b>
+            </li>
+          </ul>
+        </th>
+      </tbody>
     </table>
-    <input id="input">
     <script src="raftable.js"></script>
 </body>
 </html>
