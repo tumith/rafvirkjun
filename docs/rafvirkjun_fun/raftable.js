@@ -1,118 +1,34 @@
 let info = [
-  {
-    name: "Silfur",
-    Edlisvidnam: "0,0167",
-    Edlisleidni: "60",
-    Hitastudull: " 0,0041"
-  }, // 0
-  {
-    name: "Eir",
-    Edlisvidnam: "0,0178",
-    Edlisleidni: "56",
-    Hitastudull: "0,0041"
-  },
-  {
-    name: "Gull",
-    Edlisvidnam: "0,022",
-    Edlisleidni: "45,7",
-    Hitastudull: "0,00398"
-  },
-  {
-    name: "Ál",
-    Edlisvidnam: "0,0278",
-    Edlisleidni: "36,0",
-    Hitastudull: "0,004"
-  },
-  {
-    name: "Wolfram",
-    Edlisvidnam: "0,055",
-    Edlisleidni: "18,2",
-    Hitastudull: "0,0046"
-  },
-  {
-    name: "Zink",
-    Edlisvidnam: "0,0625",
-    Edlisleidni: "16,0",
-    Hitastudull: "0,0042"
-  },
-  {
-    name: "Nikkel",
-    Edlisvidnam: "0,095",
-    Edlisleidni: "10,5",
-    Hitastudull: "0,0055"
-  },
-  {
-    name: "Járn",
-    Edlisvidnam: "0,1",
-    Edlisleidni: "10",
-    Hitastudull: "0,00657"
-  },
-  {
-    name: "Platína",
-    Edlisvidnam: "0,098",
-    Edlisleidni: "10,2",
-    Hitastudull: "0,0038"
-  },
-  {
-    name: "Blý",
-    Edlisvidnam: "0,208",
-    Edlisleidni: "4,8",
-    Hitastudull: "0,00422"
-  },
-  {
-    name: "Manganín",
-    Edlisvidnam: "0,43",
-    Edlisleidni: "2,33",
-    Hitastudull: "0,01"
-  },
-  {
-    name: "Konstantan",
-    Edlisvidnam: "0,49",
-    Edlisleidni: "2,04",
-    Hitastudull: "0,04"
-  },
-  {
-    name: "Kvikasilfur",
-    Edlisvidnam: "0,9406",
-    Edlisleidni: "1,063",
-    Hitastudull: " 0,0009"
-  }
+  { name: "Silfur", Edlisvidnam: "0,0167", Edlisleidni: "60", Hitastudull: "0,0041" }, // 0
+  { name: "Eir", Edlisvidnam: "0,0178", Edlisleidni: "56", Hitastudull: "0,0041" },
+  { name: "Gull", Edlisvidnam: "0,022", Edlisleidni: "45,7",  Hitastudull: "0,00398" },
+  { name: "Ál", Edlisvidnam: "0,0278", Edlisleidni: "36,0", Hitastudull: "0,004" },
+  { name: "Wolfram", Edlisvidnam: "0,055", Edlisleidni: "18,2", Hitastudull: "0,0046" },
+  { name: "Zink", Edlisvidnam: "0,0625", Edlisleidni: "16,0", Hitastudull: "0,0042" },
+  { name: "Nikkel", Edlisvidnam: "0,095", Edlisleidni: "10,5", Hitastudull: "0,0055" },
+  { name: "Járn", Edlisvidnam: "0,1", Edlisleidni: "10", Hitastudull: "0,00657" },
+  { name: "Platína", Edlisvidnam: "0,098", Edlisleidni: "10,2", Hitastudull: "0,0038" },
+  { name: "Blý", Edlisvidnam: "0,208", Edlisleidni: "4,8", Hitastudull: "0,00422" },
+  { name: "Manganín", Edlisvidnam: "0,43", Edlisleidni: "2,33", Hitastudull: "0,01" },
+  { name: "Konstantan", Edlisvidnam: "0,49", Edlisleidni: "2,04", Hitastudull: "0,04" },
+  { name: "Kvikasilfur", Edlisvidnam: "0,9406", Edlisleidni: "1,063", Hitastudull: " 0,0009" }
 ];
 
 let info2 = [
   { name: "Viðnám", takn: "R", maeliening: "ohm", einingatakn: "Ω" },
-  {
-    name: "Heildarlengd leiðara",
-    takn: "l",
-    maeliening: "metri",
-    einingatakn: "m"
-  },
-  {
-    name: "Þverflatarmál leiðara",
-    takn: "A",
-    maeliening: "fermillimetrar",
-    einingatakn: "mm^2"
-  },
-  { name: "Þvermál", takn: "Φ", maeliening: "millimetrar", einingatakn: "mm" },
-  { name: "Eðlisleiðni", takn: "G", maeliening: "", einingatakn: "" },
+  { name: "Heildarlengd leiðara", takn: "l", maeliening: "metri", einingatakn: "m"},
+  { name: "Þverflatarmál leiðara", takn: "A", maeliening: "fermillimetrar", einingatakn: "mm^2"},
+  { name: "Þvermál", takn: "Φ(Ø eða d)", maeliening: "millimetrar", einingatakn: "mm" },
+  { name: "Eðlisleiðni", takn: "G", maeliening: "Siemens", einingatakn: "" },
   { name: "Eðlisviðnám", takn: "p", maeliening: "", einingatakn: "" },
   { name: "Hitastuðull", takn: "a", maeliening: "", einingatakn: "" },
   { name: "Radíus", takn: "r", maeliening: "", einingatakn: "" },
   { name: "Umfang Breyting", takn: "∆", maeliening: "Delta", einingatakn: "" },
-  {
-    name: "Viðnám við upphafshitastig",
-    takn: "Rt1",
-    maeliening: "",
-    einingatakn: ""
-  },
-  {
-    name: "viðnám við lokahitastig",
-    takn: "Rt2",
-    maeliening: "",
-    einingatakn: ""
-  },
+  { name: "Viðnám við upphafshitastig", takn: "Rt1", maeliening: "", einingatakn: ""},
+  { name: "viðnám við lokahitastig", takn: "Rt2", maeliening: "", einingatakn: ""},
   { name: "Upphafshitastig", takn: "t1", maeliening: "", einingatakn: "" },
-  { name: "lokahitastig", takn: "t2", maeliening: "", einingatakn: "" }
+  { name: "lokahitastig", takn: "t2", maeliening: "", einingatakn: "" },
+  { name: "Spennufall / Spennutap", takn: "ΔU", maeliening: "", einingatakn: ""}
 ];
 
 let info3 = [
