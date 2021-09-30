@@ -162,7 +162,7 @@ function generateTable3(table3, data3) {
   }
 }
 
-function generateTable4(table4, dat4) {
+function generateTable4(table4, data4) {
   for (let element4 of data4) {
     let row4 = table4.insertRow();
     for (let key4 in element4) {
