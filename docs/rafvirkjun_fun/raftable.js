@@ -45,6 +45,13 @@ let info4 = [
   { name: "Hitastigs-breyting", formula: "Δt = (Rt2 - Rt1) / (Rt1 * a)" }
 ];
 
+let ohmsmalid = [
+  { hugtak: "Spenna", takn: "U", eining: "Volt", einingatakn: "V" },
+  { hugtak: "Straumur", takn: "I", eining: "Amper", einingatakn:"A" },
+  { hugtak: "Viðnám", takn: "R", eining: "Ohm", einingatakn:"Ω" },
+  { hugtak: "Afl", takn: "P", eining: "Watt", einingatakn:"W" }
+]
+
 function generateTable(table, data1) {
   for (let element of data1) {
     let row = table.insertRow();
