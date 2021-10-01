@@ -45,7 +45,7 @@ let info4 = [
   { name: "Hitastigs-breyting", formula: "Δt = (Rt2 - Rt1) / (Rt1 * a)" }
 ];
 
-let ohmsmalid = [
+let info5 = [
   { hugtak: "Spenna", takn: "U", eining: "Volt", einingatakn: "V" },
   { hugtak: "Straumur", takn: "I", eining: "Amper", einingatakn:"A" },
   { hugtak: "Viðnám", takn: "R", eining: "Ohm", einingatakn:"Ω" },
@@ -96,6 +96,17 @@ function generateTable4(table4, data4) {
   }
 }
 
+function generateTable5(table5, data5) {
+  for (let element5 of data5){
+    let row5 = table5.insertRow();
+    for (let key5 in element5) {
+      let cell5 = row5.insertCell();
+      let text5 = document.createTextNode(element5[key5]);
+      cell5.appendChild(text5);
+    }
+  }
+}
+
 let table = document.getElementById("table1");
 let data1 = Object.keys(info[0]);
 generateTable(table, info); //generate table
@@ -111,3 +122,7 @@ generateTable3(table3, info3);
 let table4 = document.getElementById("table4");
 let data4 = Object.keys(info4[0]);
 generateTable3(table4, info4);
+
+let table5 = document.getElementById("table5");
+let data5 = Object.keys(info5);
+generateTable5(table5, info5);
