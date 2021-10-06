@@ -52,6 +52,51 @@ let info5 = [
   { hugtak: "Afl", takn: "P", eining: "Watt", einingatakn:"W" }
 ]
 
+let info6 = [
+  { name: "heildarviðnám innra- og ytra viðnáms", formula: "RH= Ri + Ry" },
+  { name: "spennufall yfir innra viðnám", formula: "ERi = I * Ri" },
+  { name: "innri spennu", formula: "E = ERi + U" },
+  { name: "skautspennu", formula: "E = U + I * Ri" },
+  { name: "skautspennu", formula: "U = E - (I * Ri)" }
+]
+
+let info7 = [
+  { name: "að finna inmnrtaks aflið", formula: "Pinn = U * I" },
+  { name: "að finna inntaks aflið", formula: "Pinn = Pút / n(Nýtni)" },
+  { name: "að finna aflið út", formula: "Pút = Pinn * n(Nýtni)" },
+  { name: "að finna nýtni á afli", formula: "n = Pút / Pinn" },
+  { name: "að finna tap á afli", formula: "ΔP = Pinn - Pút" }
+]
+
+let info8 = [
+  { name: "spenna og straumur eru þekktar stærðir", formula: "P = U * I" },
+  { name: "viðnám og straumur eru þekktar stærðir", formula: "P = R * I^2" },
+  { name: "Spenna og viðnám eru þekktar stærðir", formula: "P = U^2 / R" },
+  { name: "þegar hestöflin eru þekkt stærð", formula: "P = hö. * k" },
+  { name: "að finna hestöfl þegar afl er þekkt stærð", formula: "hö. = P / k" }
+]
+
+let info9 = [
+  { forskeyti: "Tera", sk_st: "T", Tugveldi_veldisvísir: "10^12", margföldunarstudull:"1.000.000.000.000", synishorn: "TB = Tera Byte" },
+  { forskeyti: "Gíga", sk_st: "G", Tugveldi_veldisvísir: "10^9", margföldunarstudull:"1.000.000.000", synishorn: "GW = Gíga Watts" },
+  { forskeyti: "Mega", sk_st: "M", Tugveldi_veldisvísir: "10^6", margföldunarstudull:"1000.000", synishorn: "MΩ = MEga ohm" },
+  { forskeyti: "Kíló", sk_st: "K", Tugveldi_veldisvísir: "10^3", margföldunarstudull:"1.000", synishorn: " KV = Kíló volt" },
+  { forskeyti: "Grunneining", sk_st: "", Tugveldi_veldisvísir: "10^0", margföldunarstudull:"1", synishorn: "v = volt" },
+  { forskeyti: "millí", sk_st: "m", Tugveldi_veldisvísir: "10^-3", margföldunarstudull:"0,001", synishorn: "mA = millí Amper" },
+  { forskeyti: "míkró", sk_st: "µ", Tugveldi_veldisvísir: "10^-6", margföldunarstudull:"0,000.001", synishorn: "µV = míkró Volt" },
+  { forskeyti: "nanó", sk_st: "n", Tugveldi_veldisvísir: "10^-9", margföldunarstudull:"0,000.000.001", synishorn: "ns = nanó sekúnda" },
+  { forskeyti: "píkó", sk_st: "p", Tugveldi_veldisvísir: "10^-12", margföldunarstudull:"0,000.000.000.001", synishorn: "pF = píkó Farad" },
+]
+
+let info10 = [
+  { name: "Rafhleðsla", formula: "Q= I * t"  },
+  { name: "Rafhleðsla", formula: "Q = U * C" },
+  { name: "Rafstraumur", formula: "I = Q / t" },
+  { name: "Hleðslutími", formula: "t = Q / I" },
+  { name: "Hleðslutími", formula: "t = R * C" },
+  { name: "Coulumb", formula: "C = Q / U" }
+]
+
 function generateTable(table, data1) {
   for (let element of data1) {
     let row = table.insertRow();
@@ -107,6 +152,60 @@ function generateTable5(table5, data5) {
   }
 }
 
+function generateTable6(table5, data6) {
+  for (let element6 of data6){
+    let row6 = table6.insertRow();
+    for (let key6 in element6) {
+      let cell6 = row6.insertCell();
+      let text6 = document.createTextNode(element6[key6]);
+      cell6.appendChild(text6);
+    }
+  }
+}
+
+function generateTable7(table7, data7) {
+  for (let element7 of data7){
+    let row7 = table7.insertRow();
+    for (let key7 in element7) {
+      let cell7 = row7.insertCell();
+      let text7 = document.createTextNode(element7[key7]);
+      cell7.appendChild(text7);
+    }
+  }
+}
+
+function generateTable8(table8, data8) {
+  for (let element8 of data8){
+    let row8 = table8.insertRow();
+    for (let key8 in element8) {
+      let cell8 = row8.insertCell();
+      let text8 = document.createTextNode(element8[key8]);
+      cell8.appendChild(text8);
+    }
+  }
+}
+
+function generateTable9(table9, data9){
+  for (let element9 of data9){
+    let row9 = table9.insertRow();
+    for (let key9 in element9) {
+      let cell9 = row9.insertCell();
+      let text9 = document.createTextNode(element9[key9]);
+      cell9.appendChild(text9);
+    }
+  }
+}
+function generateTable10(table10, data10){
+  for (let element10 of data10){
+    let row10 = table10.insertRow();
+    for (let key10 in element10) {
+      let cell10 = row10.insertCell();
+      let text10 = document.createTextNode(element10[key10]);
+      cell10.appendChild(text10);
+    }
+  }
+}
+
 let table = document.getElementById("table1");
 let data1 = Object.keys(info[0]);
 generateTable(table, info); //generate table
@@ -126,3 +225,23 @@ generateTable3(table4, info4);
 let table5 = document.getElementById("table5");
 let data5 = Object.keys(info5);
 generateTable5(table5, info5);
+
+let table6 = document.getElementById("table6");
+let data6 = Object.keys(info6[0]);
+generateTable6(table6, info6);
+
+let table7 = document.getElementById("table7");
+let data7 = Object.keys(info7[0]);
+generateTable7(table7, info7);
+
+let table8 = document.getElementById("table8");
+let data8 = Object.keys(info8[0]);
+generateTable8(table8, info8);
+
+let table9 = document.getElementById("table9");
+let data9 = Object.keys(info9[0]);
+generateTable9(table9, info9);
+
+let table10 = document.getElementById("table10");
+let data10 = Object.keys(info10[0]);
+generateTable10(table10, info10);
